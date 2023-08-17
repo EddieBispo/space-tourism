@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
+
+nav{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#containerLogo{
+    margin-left: 50px;
+}
+
+#containerIconMenuHamburger{
+    display: none;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+#containerOptionsNav{
+    width: 800px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-right: 100px;
+    background-color: #ffffff13;
+    backdrop-filter: blur(10px);
+    border-radius: 50px 0px 0px 50px;
+}
+
+.optionsNav{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+    letter-spacing: 2.7px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#containerMenuHamburguer{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(#16192e,#0f111f, #000000);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#containerIconCloseMenu{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 50px;
+    cursor: pointer;
+
+}
+
+#containerOptionsMenuHamburger{
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.optionsMenuHamburger{
+    list-style: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+
+}
+
+@media screen and (max-width: 1400px) {
+    #containerOptionsNav{
+        width: 700px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav{
+        height: 100px;
+    }
+
+    #containerOptionsNav{
+        width: 600px;
+        padding: 0;
+    }
+
+    .optionsNav{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #containerOptionsNav{
+        display: none;
+    }
+
+    #containerIconMenuHamburger{
+        display: block;
+    }
+}

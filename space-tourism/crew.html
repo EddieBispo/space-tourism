@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>02 CREW</title>
+  <link rel="stylesheet" href="css/styleHeaderCrew.css">
+  <link rel="stylesheet" href="css/styleCrew.css">
+  <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav>
+      <section id="containerLogo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+          <g fill="none" fill-rule="evenodd">
+            <circle cx="24" cy="24" r="24" fill="#FFF" />
+            <path fill="#0B0D17"
+              d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+          </g>
+        </svg>
+      </section>
+      <section onclick="abrirMenu()" id="containerIconMenuHamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+      </section>
+      <ul id="containerOptionsNav">
+        <li class="optionsNav" id="homeNav">
+          <a href="index.html">00 HOME</a>
+        </li>
+        <li class="optionsNav" id="destinationNav">
+          <a href="destination.html">01 DESTINATION</a>
+        </li>
+        <li class="optionsNav" id="crewNav">
+          <a href="crew.html">02 CREW</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Menu Hambuerger-->
+    <section id="containerMenuHamburguer">
+      <section onclick="fecharMenu()" id="containerIconCloseMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+            <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+          </g>
+        </svg>
+      </section>
+      <ul id="containerOptionsMenuHamburger">
+        <li class="optionsMenuHamburger" id="homeMenuHamburger">
+          <a href="index.html">00 HOME</a>
+        </li>
+        <li class="optionsMenuHamburger" id="destinationMenuHamburger">
+          <a href="destination.html">01 DESTINATION</a>
+        </li>
+        <li class="optionsMenuHamburger" id="crewMenuHamburger">
+          <a href="crew.html">02 CREW</a>
+        </li>
+      </ul>
+    </section>
+  </header>
+  <section id="meetYourCrew">
+    <h3><span>02</span> Meet your crew</h3>
+  </section>
+  <!--Commander-->
+  <main id="commander">
+    <section id="containerTxtMeetYoutCrew">
+      <article>
+        <h2 id="a">Commander </h2>
+        <h1>Douglas Hurley</h1>
+        <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He
+          launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+      </article>
+      <section class="containerBotoes">
+        <div onclick="mudarParaCommander()" id="btn1" class="botoes"></div>
+        <div onclick="mudarParaMissionSpecialist()" id="btn2" class="botoes"></div>
+        <div onclick="mudarParaPilot()" id="btn3" class="botoes"></div>
+        <div onclick="mudarParaFlightEngineer()" id="btn4" class="botoes"></div>
+      </section>
+    </section>
+    <aside>
+      <img id="imgCommander" src="assets/crew/image-douglas-hurley.webp" alt="Foto do comandante Douglas Hurley.">
+    </aside>
+  </main>
+  <!--Mission Specialist-->
+  <main id="missionEspecialist">
+    <section id="containerTxtMeetYoutCrew">
+      <article>
+        <h2 id="a">Mission Specialist</h2>
+        <h1>MARK SHUTTLEWORTH</h1>
+        <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu
+          operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+      </article>
+      <section class="containerBotoes">
+        <div onclick="mudarParaCommander()" id="btn1" class="botoes"></div>
+        <div onclick="mudarParaMissionSpecialist()" id="btn2" class="botoes"></div>
+        <div onclick="mudarParaPilot()" id="btn3" class="botoes"></div>
+        <div onclick="mudarParaFlightEngineer()" id="btn4" class="botoes"></div>
+      </section>
+    </section>
+    <aside>
+      <img id="imgMissionEspecialist" src="assets/crew/image-mark-shuttleworth.webp" alt="Foto do especialista da missão Mark Shuttleworth.">
+    </aside>
+  </main>
+  <!--Pilot-->
+  <main id="pilot">
+    <section id="containerTxtMeetYoutCrew">
+      <article>
+        <h2 id="a">PILOT</h2>
+        <h1>Victor Glover</h1>
+        <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. </p>
+      </article>
+      <section class="containerBotoes">
+        <div onclick="mudarParaCommander()" id="btn1" class="botoes"></div>
+        <div onclick="mudarParaMissionSpecialist()" id="btn2" class="botoes"></div>
+        <div onclick="mudarParaPilot()" id="btn3" class="botoes"></div>
+        <div onclick="mudarParaFlightEngineer()" id="btn4" class="botoes"></div>
+      </section>
+    </section>
+    <aside>
+      <img id="imgPilot" src="assets/crew/image-victor-glover.webp" alt="">
+    </aside>
+  </main>
+  <!--Flight Engineer-->
+  <main id="flightEngineer">
+    <section id="containerTxtMeetYoutCrew">
+      <article>
+        <h2 id="a">Flight Engineer</h2>
+        <h1>Anousheh Ansari</h1>
+        <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
+      </article>
+      <section class="containerBotoes">
+        <div onclick="mudarParaCommander()" id="btn1" class="botoes"></div>
+        <div onclick="mudarParaMissionSpecialist()" id="btn2" class="botoes"></div>
+        <div onclick="mudarParaPilot()" id="btn3" class="botoes"></div>
+        <div onclick="mudarParaFlightEngineer()" id="btn4" class="botoes"></div>
+      </section>
+    </section>
+    <aside>
+      <img id="imgFlightEngineer" src="assets/crew/image-anousheh-ansari.webp" alt="Foto do especialista da missão Mark Shuttleworth.">
+    </aside>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+@charset "UTF_8";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
+body{
+    height: 100vh;
+    background-image: url(/assets/home/background-home-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+main{
+    max-width: 1600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+h1{
+    color: #FFF;
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+h2{
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    margin: 0;
+}
+
+p{
+    width: 444px;
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+}
+
+aside{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 274px;
+    height: 274px;
+    flex-shrink: 0;
+    border-radius: 274px;
+    background: #FFF;
+    border: none;
+    cursor: pointer;
+    color: #0B0D17;
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1060px ) {
+    body{
+        background-image: url(/assets/home/background-home-tablet.jpg);
+    }
+
+    main{
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    article{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    aside{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    button{
+        width: 180px;
+        height: 180px;
+        
+  }
+}
+
+@media screen and (max-width: 750px) {
+    body{
+        background-image: url(/assets/home/background-home-mobile.jpg);
+    }
+
+    main{
+        height: 500px;
+    }
+
+    h1{
+        font-size: 80px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+    
+    p{
+        width: 327px;
+        font-size: 15px;
+    }
+
+    button{
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+        letter-spacing: 1.25px;
+    }
+}

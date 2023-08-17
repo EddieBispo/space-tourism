@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="css/styleHeader.css">
+  <link rel="stylesheet" href="css/styleCrew.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <section id="containerLogo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+      </section>
+      <section onclick="abrirMenu()" id="containerIconMenuHamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+      </section>
+      <ul id="containerOptionsNav">
+        <li class="optionsNav" id="homeNav">
+          <a href="index.html">00 HOME</a>
+        </li>
+        <li class="optionsNav" id="destinationNav">
+          <a href="destination.html">01 DESTINATION</a>
+        </li>
+        <li class="optionsNav" id="crewNav">
+          <a href="crew.html">02 CREW</a>
+        </li>
+        <li class="optionsNav" id="technologyNav">
+          <a href="technology.html">03 TECHNOLOGY</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Menu Hambuerger-->
+    <section id="containerMenuHamburguer">
+      <section onclick="fecharMenu()" id="containerIconCloseMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+      </section>
+      <ul id="containerOptionsMenuHamburger">
+        <li class="optionsMenuHamburger" id="homeMenuHamburger">
+          <a href="index.html">00 HOME</a>
+        </li>
+        <li class="optionsMenuHamburger" id="destinationMenuHamburger">
+          <a href="destination.html">01 DESTINATION</a>
+        </li>
+        <li class="optionsMenuHamburger" id="crewMenuHamburger">
+          <a href="crew.html">02 CREW</a>
+        </li>
+        <li class="optionsMenuHamburger" id="technologyMenuHamburger">
+          <a href="technology">03 TECHNOLOGY</a>
+        </li>
+      </ul>
+    </section>
+  </header>
+
+  <main>
+    <section id="containerTxtMeetYoutCrew">
+      <section id="meetYourCrew">
+        <h3><span>02</span> Meet your crew</h3>
+      </section>
+      <article>
+        <h2>Commander </h2>
+        <h1>Douglas Hurley</h1>
+        <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+      </article>
+      <section class="containerBotoes">
+        <div id="btn1" class="botoes"></div>
+        <div id="btn2" class="botoes"></div>
+        <div id="btn3" class="botoes"></div>
+        <div id="btn4" class="botoes"></div>
+      </section>
+    </section>
+    <aside>
+      <img src="assets/crew/image-douglas-hurley.webp" alt="Foto do comandante Douglas Hurley.">
+    </aside>
+  </main>
+</body>
+</html>
